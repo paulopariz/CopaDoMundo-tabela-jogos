@@ -9,14 +9,40 @@
   />
     <link href="/dist/output.css" rel="stylesheet">
 
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet">
 
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
 </head>
+
+<style>
+  .swiper-button-next,
+  .swiper-button-prev {
+    right:0;
+    left: 0;
+    width: 0;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: 17px;
+    font-weight: 900;
+    color: #8D1B3D;
+    background-color: #F1F5F9;
+    padding: 12px;
+    border-radius: 5px;
+}
+.swiper-button-next:after{
+  margin-left: 65px !important;
+  
+}
+.swiper-button-prev:after{
+  margin-right: 65px !important;
+}
+</style>
 
 <body>
     <nav
@@ -65,70 +91,203 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!--GRUPO A-->
-        <div class="swiper-slide rounded-md bg-slate-200 p-4">GRUPO A
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO A
+          <div class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-A/Qatar.svg" alt="">
+            <p>Qatar</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-A/Ecuador.svg" alt="">
+            <p>Equador</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-A/Senegal.svg" alt="">
+            <p>Senegal</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-A/Netherlands.svg" alt="">
+            <p>Holanda</p>
+          </div>
         </div>
 
         <!--GRUPO B-->
-        <div class="swiper-slide rounded-md bg-slate-200 p-4">GRUPO B
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO B
+          <div class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-B/United Kingdom.svg" alt="">
+            <p>Inglaterra</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-B/Iran.svg" alt="">
+            <p>Irã</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-B/USA.svg" alt="">
+            <p>Estados Unidos</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-B/Wales.svg" alt="">
+            <p>País de Gales</p>
+          </div>
         </div>
 
         <!--GRUPO C-->
-        <div class="swiper-slide rounded-md bg-slate-200 p-4">GRUPO C
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO C
+          <div class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-C/Argentina.svg" alt="">
+            <p>Argentina</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-C/Saudi Arabia.svg" alt="">
+            <p>Arábia Saudita</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-C/Mexico.svg" alt="">
+            <p>México</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-C/Poland.svg" alt="">
+            <p>Polônia</p>
+          </div>
         </div>
 
         <!--GRUPO D-->
-        <div class="swiper-slide rounded-md bg-slate-200 p-4">GRUPO D
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO D
+          <div class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-D/France.svg" alt="">
+            <p>França</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-D/Australia.svg" alt="">
+            <p>Austrália</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-D/Denmark.svg" alt="">
+            <p>Dinamarca</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-D/Tunisia.svg" alt="">
+            <p>Tunísia</p>
+          </div>
         </div>
 
         <!--GRUPO E-->
-        <div class="swiper-slide rounded-md bg-slate-200 p-4">GRUPO E
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO E
+          <div class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-E/Spain.svg" alt="">
+            <p>Espanha</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-E/Costa Rica.svg" alt="">
+            <p>Costa Rica</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-E/Germany.svg" alt="">
+            <p>Alemanha</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-E/Japan.svg" alt="">
+            <p>Japão</p>
+          </div>
         </div>
 
         <!--GRUPO F-->
-        <div class="swiper-slide rounded-md bg-slate-200 p-4">GRUPO F
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO F
+          <div class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-F/Belgium.svg" alt="">
+            <p>Bélgica</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-F/Canada.svg" alt="">
+            <p>Canadá</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-F/Morroco.svg" alt="">
+            <p>Marrocos</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-F/Croatia.svg" alt="">
+            <p>Croácia</p>
+          </div>
         </div>
 
          <!--GRUPO G-->
-        <div class="swiper-slide rounded-md bg-slate-200 p-4">GRUPO G
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO G
+          <div class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-G/Brazil.svg" alt="">
+            <p>Brasil</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-G/Serbia.svg" alt="">
+            <p>Sérvia</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-G/Sweden.svg" alt="">
+            <p>Suíça</p>
+          </div>
+
+          <div  class="flex gap-6">
+            <img class="w-12 h-10" src="/assets/grupo-G/Cameroon.svg" alt="">
+            <p>Camarões</p>
+          </div>
+        </div>
+
+            <!--GRUPO H-->
+        <div class="swiper-slide rounded-md bg-slate-100 p-4">GRUPO H
+              <div class="flex gap-6">
+                <img class="w-12 h-10" src="/assets/grupo-H/Portugal.svg" alt="">
+                <p>Portugal</p>
+              </div>
+    
+              <div  class="flex gap-6">
+                <img class="w-12 h-10" src="/assets/grupo-H/Ghana.svg" alt="">
+                <p>Gana</p>
+              </div>
+    
+              <div  class="flex gap-6">
+                <img class="w-12 h-10" src="/assets/grupo-H/Flag of Uruguay 1.svg" alt="">
+                <p>Uruguai</p>
+              </div>
+    
+              <div  class="flex gap-6">
+                <img class="w-12 h-10" src="/assets/grupo-H/South Korea.svg" alt="">
+                <p>Coreia do Sul</p>
+              </div>
         </div>
         
       </div>
 
       
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+
+    <div class="relative mt-14 flex">
+      <div class="swiper-button-next m-auto"></div>
+      <div class="swiper-button-prev m-auto"></div>
+    </div>
   
 
 </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
