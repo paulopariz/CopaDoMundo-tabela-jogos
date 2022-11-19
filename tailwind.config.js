@@ -14,6 +14,16 @@ module.exports = {
         '41%': '41%',
         '78%': '78%',
         '6%': '6%'
+      },
+      boxShadow: {
+        '3xl': '3px 3px 3px rgba(60, 57, 57, 0.2)',
+      },
+      colors: {
+        'bg-slate-60': '#F4F4F4',
+        'color-qatar': '#710C32'
+      },
+      fontFamily: {
+        'qatar': ['"Qatar2022 Arabic"', 'sans-serif']
       }
     },
   },
