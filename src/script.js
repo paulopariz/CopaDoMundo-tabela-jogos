@@ -9,3 +9,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  document.getElementById("dia20").textContent = "Fase de grupos - Seg, 20/11" ;
+  document.getElementById("dia21").textContent = "Fase de grupos - Seg, 21/11" ;
