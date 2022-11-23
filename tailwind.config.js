@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1920px',
+      },
       width: {
         '1920' : '1920px',
       },
@@ -10,10 +13,13 @@ module.exports = {
         '600': '600px',
       },
       inset: {
-        '52px': '52px',
+        '64px': '64px',
         '41%': '41%',
         '78%': '78%',
-        '6%': '6%'
+        '6%': '6%',
+        '30': '7.5rem',
+        '18': '4.6rem',
+        '22': '5.5rem'
       },
       boxShadow: {
         '3xl': '3px 3px 3px rgba(60, 57, 57, 0.2)',

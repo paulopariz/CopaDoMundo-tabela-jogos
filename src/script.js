@@ -55,8 +55,72 @@ function verMenos(){
 }
 
 
+//MENU-MOBILE
+document.getElementById("button-menu").onclick = function() {menu()};
+
+function menu(){
+    document.getElementById("header").style.display = "none";
+    document.getElementById("grupos").style.display = "none";
+    document.getElementById("images").style.display = "none";
+    document.getElementById("footer").style.display = "none";
+    document.getElementById("title-grupos").style.display = "none";
+    document.body.style.overflow = "hidden"
+    document.getElementById("menu-mobile").style.display = "grid";
+}
 
 
+//BOTAO FECHAR MENU
+document.getElementById("fechar-menu").onclick = function() {fecharMenu()};
+
+function fecharMenu(){
+  document.getElementById("header").style.display = "block";
+  document.getElementById("grupos").style.display = "block";
+  document.getElementById("images").style.display = "block";
+  document.getElementById("footer").style.display = "grid";
+  document.getElementById("title-grupos").style.display = "block";
+  document.body.style.overflow = "visible"
+  document.getElementById("menu-mobile").style.display = "none";
+}
+
+
+//LINKS MENU
+document.querySelectorAll(".link-inicio").onclick = function() {linkInicio()};
+
+function linkInicio(){
+    document.getElementById("header").style.display = "block";
+    document.getElementById("grupos").style.display = "block";
+    document.getElementById("images").style.display = "block";
+    document.getElementById("footer").style.display = "grid";
+    document.getElementById("title-grupos").style.display = "block";
+    document.body.style.overflow = "visible"
+    document.getElementById("menu-mobile").style.display = "none";
+}
+
+
+document.querySelectorAll(".link-partidaa").onclick = function() {linkPartidas()};
+
+function linkPartidas(){
+    document.getElementById("header").style.display = "block";
+    document.getElementById("grupos").style.display = "block";
+    document.getElementById("images").style.display = "block";
+    document.getElementById("footer").style.display = "grid";
+    document.getElementById("title-grupos").style.display = "block";
+    document.body.style.overflow = "visible"
+    document.getElementById("menu-mobile").style.display = "none";
+}
+
+
+document.querySelectorAll(".link-grupos").onclick = function() {linkGrupos()};
+
+function linkGrupos(){
+    document.getElementById("header").style.display = "block";
+    document.getElementById("grupos").style.display = "block";
+    document.getElementById("images").style.display = "block";
+    document.getElementById("footer").style.display = "grid";
+    document.getElementById("title-grupos").style.display = "block";
+    document.body.style.overflow = "visible"
+    document.getElementById("menu-mobile").style.display = "none";
+}
 
 
 

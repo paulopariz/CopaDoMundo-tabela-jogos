@@ -43,1251 +43,1232 @@
 .swiper-button-prev:after{
   margin-right: 65px !important;
 }
+
+#menu-mobile {
+	-webkit-animation: scale-in-hor-right 0.2s ;
+	        animation: scale-in-hor-right 0.2s ;
+}
+ @-webkit-keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+
+
 </style>
 
-<body class="font-qatar bg-white">
-    <nav
-  aria-label="Site Nav"
-  class="mx-auto flex max-w-3xl items-center justify-between p-4"
->
-  <a
-    href="#"
-    class="inline-flex  items-center justify-center w-20 h-5"
-  >
-    <img src="/assets/logo-fifa.svg" alt="logo-fifa">
-  </a>
+<body class="font-qatar bg-white text-gray-800">
 
-  <ul class="flex items-center gap-2 text-sm  font-medium text-gray-500">
-    <li>
-      <a class="rounded-lg px-3 py-2 link-hover" href="#"> Início </a>
-    </li>
+  <!--MENU MOBILE-->
+  <div id="menu-mobile" class="hidden bg-color-footer text-white">
+    <button id="fechar-menu" class="float-right p-6 m-auto mr-0 max-sm:pr-6 max-md:pr-20">
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"       viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
 
-    <li>
-        <a class="rounded-lg px-3 py-2 link-hover" href="#grupos"> Grupos </a>
-    </li>
-
-    <li>
-        <a class="rounded-lg px-3 py-2 link-hover" href="#partidas"> Partidas </a>
-    </li>
-
- 
-  </ul>
-</nav>
-
-<div>
-    <div>
-        <img class="relative" src="/assets/wallpaper.png">
-        <img class="absolute left-0 top-[52px] z-10" src="/assets/gradient.png">
-        <img src="/assets/logo-fifa-world-cup.png" class="absolute z-20 top-36 w-80 h-96 left-[41%] right-[41%] bottom-[78% max-sm:w-20 max-sm:h-24 max-sm:top-16 max-md:w-28 max-md:h-32 max-md:top-20 max-lg:w-40 max-lg:h-44 max-lg:top-24 max-xl:w-52 max-xl:h-56 max-2xl:top-24 max-2xl:w-64 max-2xl:h-72">
+    <div  class="text-3xl h-screen m-auto mt-24">
+      <a href="/src/index.html" class="link-inicio mt-32">Início</a>
+      <p class="link-grupos mt-24"><a href="/src/index.html">Grupos</a></p>
+      <p class="link-partidas mt-24"><a href="/src/index.html" >Partidas</a></p>
     </div>
-</div>
-
-<br><br><br>
-
-<h1 class="text-2xl	font-medium	text-neutral-800 text-center" id="grupos">GRUPOS</h1>
-
-<br><br>
-
-<div class="container m-auto px-40 max-sm:px-6 max-md:px-12 max-lg:px-10 max-xl:px-16">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <!--Grupo A-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl">
-          <p class="text-xl text-center text-color-qatar p-5">Grupo A</p>
-          <div class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-A/Qatar.svg" alt="">
-            <p class="text-sm  ">Catar</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-A/Ecuador.svg" alt="">
-            <p class="text-sm  ">Equador</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-A/Senegal.svg" alt="">
-            <p class="text-sm  ">Senegal</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-A/Netherlands.svg" alt="">
-            <p class="text-sm  ">Holanda</p>
-          </div>
-        </div>
-
-        <!--Grupo B-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
-          <p class="text-center text-xl text-color-qatar p-5">Grupo B</p>
-          <div class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-B/United Kingdom.svg" alt="">
-            <p class="text-sm  ">Inglaterra</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-B/Iran.svg" alt="">
-            <p class="text-sm  ">Irã</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-B/USA.svg" alt="">
-            <p class="text-sm  ">Estados Unidos</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-B/Wales.svg" alt="">
-            <p class="text-sm  ">País de Gales</p>
-          </div>
-        </div>
-
-        <!--Grupo C-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
-          <p class="text-center text-xl text-color-qatar p-5">Grupo C</p>
-          <div class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-C/Argentina.svg" alt="">
-            <p class="text-sm  ">Argentina</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-C/Saudi Arabia.svg" alt="">
-            <p class="text-sm  ">Arábia Saudita</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-C/Mexico.svg" alt="">
-            <p class="text-sm  ">México</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-C/Poland.svg" alt="">
-            <p class="text-sm  ">Polônia</p>
-          </div>
-        </div>
-
-        <!--Grupo D-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
-          <p class="text-center text-xl text-color-qatar p-5">Grupo D</p>
-          <div class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-D/France.svg" alt="">
-            <p class="text-sm  ">França</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-D/Australia.svg" alt="">
-            <p class="text-sm  ">Austrália</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-D/Denmark.svg" alt="">
-            <p class="text-sm  ">Dinamarca</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-D/Tunisia.svg" alt="">
-            <p class="text-sm  ">Tunísia</p>
-          </div>
-        </div>
-
-        <!--Grupo E-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
-          <p class="text-center text-xl text-color-qatar p-5">Grupo E</p>
-          <div class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-E/Spain.svg" alt="">
-            <p class="text-sm  ">Espanha</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-E/Costa Rica.svg" alt="">
-            <p class="text-sm  ">Costa Rica</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-E/Germany.svg" alt="">
-            <p class="text-sm  ">Alemanha</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-E/Japan.svg" alt="">
-            <p class="text-sm  ">Japão</p>
-          </div>
-        </div>
-
-        <!--Grupo F-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
-          <p class="text-center text-xl text-color-qatar p-5">Grupo F</p>
-          <div class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-F/Belgium.svg" alt="">
-            <p class="text-sm  ">Bélgica</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-F/Canada.svg" alt="">
-            <p class="text-sm  ">Canadá</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-F/Morroco.svg" alt="">
-            <p class="text-sm  ">Marrocos</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-F/Croatia.svg" alt="">
-            <p class="text-sm  ">Croácia</p>
-          </div>
-        </div>
-
-         <!--Grupo G-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
-          <p class="text-center text-xl text-color-qatar p-5">Grupo G</p>
-          <div class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-G/Brazil.svg" alt="">
-            <p class="text-sm">Brasil</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-G/Serbia.svg" alt="">
-            <p class="text-sm  ">Sérvia</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-G/Sweden.svg" alt="">
-            <p class="text-sm  ">Suíça</p>
-          </div>
-
-          <div  class="flex gap-6 p-3 items-center">
-            <img class="w-12 h-10" src="/assets/grupo-G/Cameroon.svg" alt="">
-            <p class="text-sm  ">Camarões</p>
-          </div>
-        </div>
-
-            <!--Grupo H-->
-        <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
-          <p class="text-center text-xl text-color-qatar p-5">Grupo H</p>
-              <div class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-H/Portugal.svg" alt="">
-                <p class="text-sm  ">Portugal</p>
-              </div>
-    
-              <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-H/Ghana.svg" alt="">
-               <p class="text-sm  ">Gana</p>
-              </div>
-    
-              <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-H/Flag of Uruguay 1.svg" alt="">
-                <p class="text-sm  ">Uruguai</p>
-              </div>
-    
-              <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-H/South Korea.svg" alt="">
-                <p class="text-sm   ">Coreia do Sul</p>
-              </div>
-        </div>
-        
-      </div>
-
-      <br>
-
-    </div>
-
-    <div class="relative mt-14 flex">
-      <div class="swiper-button-next m-auto"></div>
-      <div class="swiper-button-prev m-auto"></div>
-    </div>
-  
-    <br><br><br>
-
-    <div class="mt-11">
-      <h1 class="text-2xl	font-medium	text-neutral-800 text-center" id="partidas">PARTIDAS</h1>
-
-      <section class="mt-20">
-
-        <h1 class="text-base	font-medium	text-neutral-800 " id="dia20"></h1>
-
-        <!--CATAR X EQUADOR-->
-        <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-          <div class=" flex items-center gap-14 ">
-            <img class="pr-11 h-12" src="/assets/grupo-A/Qatar.svg">
-            <p class="text-xl	text-zinc-700 ">Cat</p>
-          </div>
-          <!--DATA/HORARIO-->
-            <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-              <p>0</p>
-              <span>-</span>
-              <p>2</p>
-            </div>
-            <div class=" flex items-center gap-14 ">
-              <p class="text-xl	text-zinc-700 ">Equ</p>
-              <img class="pl-11 h-12" src="/assets/grupo-A/Ecuador.svg">
-            </div>
-          
-        </div>
-
-        <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia21"></h1>
-
-        <!--INGLATERRA X IRA-->
-        <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-          <div class=" flex items-center gap-14 ">
-            <img class="pr-11 h-12" src="/assets/grupo-B/United Kingdom.svg">
-            <p class="text-xl	text-zinc-700 ">Ing</p>
-          </div>
-          <!--DATA/HORARIO-->
-            <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-              <p>6</p>
-              <span>-</span>
-              <p>2</p>
-            </div>
-            <div class=" flex items-center gap-14 ">
-              <p class="text-xl	text-zinc-700 ">Ira</p>
-              <img class="pl-11"h-12 src="/assets/grupo-B/Iran.svg">
-            </div>
-          
-        </div>
-
-        <!--SENEGAL X HOLANDA-->
-        <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-          <div class=" flex items-center gap-14 ">
-            <img class="pr-11 h-12" src="/assets/grupo-A/Senegal.svg">
-            <p class="text-xl	text-zinc-700 ">Sen</p>
-          </div>
-          <!--DATA/HORARIO-->
-            <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-              <p>0</p>
-              <span>-</span>
-              <p>2</p>
-            </div>
-            <div class=" flex items-center gap-14 ">
-              <p class="text-xl	text-zinc-700">Hol</p>
-              <img class="pl-11"h-12 src="/assets/grupo-A/Netherlands.svg">
-            </div>
-          
-        </div>
-
-        <!--ESTADOS UNIDOS X GALES-->
-        <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-          <div class=" flex items-center gap-14 ">
-            <img class="pr-11 h-12" src="/assets/grupo-B/USA.svg">
-            <p class="text-xl	text-zinc-700 ">Eua</p>
-          </div>
-          <!--DATA/HORARIO-->
-            <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-              <p>1</p>
-              <span>-</span>
-              <p>1</p>
-            </div>
-            <div class=" flex items-center gap-14 ">
-              <p class="text-xl	text-zinc-700">Gal</p>
-              <img class="pl-11"h-12 src="/assets/grupo-B/Wales.svg">
-            </div>
-          
-        </div>
-
-
-        <div id="verMenos">
-          <div class="hidden" id="verMais1">
-
-            <!--///////////////
-              DIA 22
-            /////////////-->
-            
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia22"></h1>
-
-            <!--ARGENTINA X ARABIA SAUDITA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-C/Argentina.svg">
-                <p class="text-xl	text-zinc-700 ">Arg</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>22/11</p>
-                  <p>07:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ara</p>
-                  <img class="pl-11"h-12 src="/assets/grupo-C/Saudi Arabia.svg">
-                </div>
-          
-            </div>
-
-            <!--DINAMARCA X TUNISIA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-D/Denmark.svg">
-                <p class="text-xl	text-zinc-700 ">Din</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>22/11</p>
-                  <p>10:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Tun</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-D/Tunisia.svg">
-                </div>
-          
-            </div>
-
-            <!--MEXICO X POLONIA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-C/Mexico.svg">
-                <p class="text-xl	text-zinc-700 ">Mex</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>22/11</p>
-                  <p>13:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Pol</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-C/Poland.svg">
-                </div>
-            </div>
-
-            <!--FRANCA X AUSTRALIA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-D/France.svg">
-                <p class="text-xl	text-zinc-700 ">Fra</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>22/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Aus</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-D/Australia.svg">
-                </div>
-            </div>
-
-
-
-            <!--///////////////
-              DIA 23
-            /////////////-->
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia23"></h1>
-
-            <!--MARROCOS X CROACIA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-F/Morroco.svg">
-                <p class="text-xl	text-zinc-700 ">Mar</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>23/11</p>
-                  <p>07:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Cro</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-F/Croatia.svg">
-                </div>
-            </div>
-
-            <!--ALEMANHA X JAPAO-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-E/Germany.svg">
-                <p class="text-xl	text-zinc-700 ">Ale</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>23/11</p>
-                  <p>10:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Jap</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-E/Japan.svg">
-                </div>
-            </div>
-
-            <!--ESPANHA X COSTA RICA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-E/Spain.svg">
-                <p class="text-xl	text-zinc-700 ">Esp</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>23/11</p>
-                  <p>13:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Crc</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-E/Costa Rica.svg">
-                </div>
-            </div>
-
-            <!--BELGICA X CANADA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-F/Belgium.svg">
-                <p class="text-xl	text-zinc-700 ">Bel</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>23/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Can</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-F/Canada.svg">
-                </div>
-            </div>
-
-            <!--///////////////
-              DIA 24
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia24"></h1>
-
-            <!--SUICA X CAMAROES-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-G/Sweden.svg">
-                <p class="text-xl	text-zinc-700 ">Sui</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>24/11</p>
-                  <p>07:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Cam</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-G/Cameroon.svg">
-                </div>
-            </div>
-
-            <!--URUGUAI X COREIA DO SUL-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-H/Flag of Uruguay 1.svg">
-                <p class="text-xl	text-zinc-700 ">Uru</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>24/11</p>
-                  <p>10:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Cor</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-H/South Korea.svg">
-                </div>
-            </div>
-
-            <!--PORTUGAL X GANA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-H/Portugal.svg ">
-                <p class="text-xl	text-zinc-700 ">Por</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>24/11</p>
-                  <p>13:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Gan</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-H/Ghana.svg">
-                </div>
-            </div>
-
-            <!--BRASIL X SERVIA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-G/Brazil.svg">
-                <p class="text-xl	text-zinc-700 ">Bra</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>24/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ser</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-G/Serbia.svg">
-                </div>
-            </div>
-
-            <!--///////////////
-              DIA 25
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia25"></h1>
-
-            <!--GALES X IRA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-B/Wales.svg">
-                <p class="text-xl	text-zinc-700 ">Gal</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>25/11</p>
-                  <p>07:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ira</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-B/Iran.svg">
-                </div>
-            </div>
-
-            <!--CATAR X SENEGAL-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-A/Qatar.svg">
-                <p class="text-xl	text-zinc-700 ">Cat</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>25/11</p>
-                  <p>10:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Sen</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-A/Senegal.svg">
-                </div>
-            </div>
-
-            <!--HOLANDA X EQUADOR-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-A/Netherlands.svg">
-                <p class="text-xl	text-zinc-700 ">Hol</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>25/11</p>
-                  <p>13:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Equ</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-A/Ecuador.svg">
-                </div>
-            </div>
-
-            <!--INGLATERRA X ESTADOS UNIDOS-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-B/United Kingdom.svg">
-                <p class="text-xl	text-zinc-700 ">Ing</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>25/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Eua</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-B/USA.svg">
-                </div>
-            </div>
-         
-
-            <!--///////////////
-              DIA 26
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia26"></h1>
-
-            <!--TUNISIA X AUSTRALIA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-D/Tunisia.svg">
-                <p class="text-xl	text-zinc-700 ">Tun</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>26/11</p>
-                  <p>07:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Aus</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-D/Australia.svg">
-                </div>
-            </div>
-
-            <!--POLONIA X ARABIA SAUDITA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-C/Poland.svg">
-                <p class="text-xl	text-zinc-700 ">Pol</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>26/11</p>
-                  <p>10:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ara</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-C/Saudi Arabia.svg">
-                </div>
-            </div>
-
-            <!--FRANCA X DINAMARCA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-D/France.svg">
-                <p class="text-xl	text-zinc-700 ">Fra</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>26/11</p>
-                  <p>13:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Din</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-D/Denmark.svg">
-                </div>
-            </div>
-
-            <!--ARGENTINA X MEXICO-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-C/Argentina.svg">
-                <p class="text-xl	text-zinc-700 ">Arg</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>26/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Mex</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-C/Mexico.svg">
-                </div>
-            </div>
-
-
-            <!--///////////////
-              DIA 27
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia27"></h1>
-
-            <!--JAPAO X COSTA RICA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-E/Japan.svg">
-                <p class="text-xl	text-zinc-700 ">Jap</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>27/11</p>
-                  <p>07:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Crc</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-E/Costa Rica.svg">
-                </div>
-            </div>
-
-            <!--BELGICA X MARROCOS-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-F/Belgium.svg">
-                <p class="text-xl	text-zinc-700 ">Bel</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>27/11</p>
-                  <p>10:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Mar</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-F/Morroco.svg">
-                </div>
-            </div>
-
-            <!--CROACIA X CANADA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-F/Croatia.svg">
-                <p class="text-xl	text-zinc-700 ">Cro</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>27/11</p>
-                  <p>13:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Can</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-F/Canada.svg">
-                </div>
-            </div>
-
-            <!--ESPANHA X ALEMANHA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-E/Spain.svg">
-                <p class="text-xl	text-zinc-700 ">Esp</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>27/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ale</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-E/Germany.svg">
-                </div>
-            </div>
-
-            <!--///////////////
-              DIA 28
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia28"></h1>
-
-            <!--CAMAROES X SERVIA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-G/Cameroon.svg">
-                <p class="text-xl	text-zinc-700 ">Cam</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>28/11</p>
-                  <p>07:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ser</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-G/Serbia.svg">
-                </div>
-            </div>
-
-            <!--COREIA DO SUL X GANA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-H/South Korea.svg">
-                <p class="text-xl	text-zinc-700 ">Cor</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>28/11</p>
-                  <p>10:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Gan</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-H/Ghana.svg">
-                </div>
-            </div>
-
-            <!--BRASIL X SUICA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-G/Brazil.svg">
-                <p class="text-xl	text-zinc-700 ">Bra</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>28/11</p>
-                  <p>13:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Sui</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-G/Sweden.svg">
-                </div>
-            </div>
-
-            <!--PORTUGAL X URUGUAI-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-H/Portugal.svg">
-                <p class="text-xl	text-zinc-700 ">Por</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>28/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Uru</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-H/Flag of Uruguay 1.svg">
-                </div>
-            </div>
-
-            <!--///////////////
-              DIA 29
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia29"></h1>
-
-            <!--EQUADOR X SENEGAL-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-A/Ecuador.svg">
-                <p class="text-xl	text-zinc-700 ">Equ</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>29/11</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Sen</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-A/Senegal.svg">
-                </div>
-            </div>
-
-            <!--HOLANDA X CATAR-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-A/Netherlands.svg">
-                <p class="text-xl	text-zinc-700 ">Hol</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>29/11</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Cat</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-A/Qatar.svg">
-                </div>
-            </div>
-
-            <!--IRA X ESTADOS UNIDOS-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-B/Iran.svg">
-                <p class="text-xl	text-zinc-700 ">Ira</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>29/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Eua</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-B/USA.svg">
-                </div>
-            </div>
-
-            <!--PAIS DE GALES X INGLATERRA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-B/Wales.svg">
-                <p class="text-xl	text-zinc-700 ">Gal</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>29/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ing</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-B/United Kingdom.svg">
-                </div>
-            </div>
-
-            <!--///////////////
-              DIA 30
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia30"></h1>
-
-            <!--TUNISIA X FRANCA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-D/Tunisia.svg">
-                <p class="text-xl	text-zinc-700 ">Tun</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>30/11</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Fra</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-D/France.svg">
-                </div>
-            </div>
-
-            <!--AUSTRALIA X DINAMARCA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-D/Australia.svg">
-                <p class="text-xl	text-zinc-700 ">Aus</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>30/11</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Din</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-D/Denmark.svg">
-                </div>
-            </div>
-
-            <!--POLONIA X ARGENTINA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-C/Poland.svg">
-                <p class="text-xl	text-zinc-700 ">Pol</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>30/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Arg</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-C/Argentina.svg">
-                </div>
-            </div>
-
-            <!--ARABIA SAUDITA X MEXICO-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-C/Saudi Arabia.svg">
-                <p class="text-xl	text-zinc-700 ">Ara</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>30/11</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Mex</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-C/Mexico.svg">
-                </div>
-            </div>
-
-
-            <!--///////////////
-              DIA 01
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia01"></h1>
-
-            <!--CROACIA X BELGICA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-F/Croatia.svg">
-                <p class="text-xl	text-zinc-700 ">Cro</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>01/12</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Bel</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-F/Belgium.svg">
-                </div>
-            </div>
-
-            <!--CANADA X MARROCOS-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-F/Canada.svg">
-                <p class="text-xl	text-zinc-700 ">Can</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>01/12</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Mar</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-F/Morroco.svg">
-                </div>
-            </div>
-
-            <!--JAPAO X ESPANHA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-E/Japan.svg">
-                <p class="text-xl	text-zinc-700 ">Jap</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>01/12</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Esp</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-E/Spain.svg">
-                </div>
-            </div>
-
-            <!--COSTA RICA X ALEMANHA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-E/Costa Rica.svg">
-                <p class="text-xl	text-zinc-700 ">Crc</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>01/12</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Ale</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-E/Germany.svg">
-                </div>
-            </div>
-
-
-            <!--///////////////
-              DIA 02
-            /////////////-->
-
-            <h1 class="text-base	font-medium	text-neutral-800 mt-5" id="dia02"></h1>
-
-            <!--COREIA DO SUL X PORTUGAL-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-H/South Korea.svg">
-                <p class="text-xl	text-zinc-700 ">Cor</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>02/12</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Por</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-H/Portugal.svg">
-                </div>
-            </div>
-
-            <!--GANA X URUGUAI-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-H/Ghana.svg">
-                <p class="text-xl	text-zinc-700 ">Gan</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>02/12</p>
-                  <p>12:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Uru</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-H/Flag of Uruguay 1.svg">
-                </div>
-            </div>
-
-            <!--SERVIA X SUICA-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-G/Serbia.svg">
-                <p class="text-xl	text-zinc-700 ">Ser</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>02/12</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Sui</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-G/Sweden.svg">
-                </div>
-            </div>
-
-            <!--CAMAROES X BRASIL-->
-            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
-              <div class=" flex items-center gap-14 ">
-                <img class="pr-11 h-12" src="/assets/grupo-G/Cameroon.svg">
-                <p class="text-xl	text-zinc-700 ">Cam</p>
-              </div>
-              <!--DATA/HORARIO-->
-                <div class="flex gap-7 items-center m-auto text-color-qatar text-base">
-                  <p>02/12</p>
-                  <p>16:00</p>
-                </div>
-                <div class=" flex items-center gap-14 ">
-                  <p class="text-xl	text-zinc-700">Bra</p>
-                  <img class="pl-11 h-12" src="/assets/grupo-G/Brazil.svg">
-                </div>
-            </div>
-
-
-
-
-
-          <!--FIM VER MENOS-->
-          </div>
-
-
-          
-        </div>
-
-        <br><br><br>
-
-        <div class="flex justify-center">
-          <!--BOTAO VER MAIS-->
-          <a
-            class="group relative inline-block overflow-hidden border border-color-qatar px-8 py-3 focus:outline-none focus:ring cursor-pointer" id="buttonVerMais1"
-          >
-            <span
-              class="absolute inset-x-0 bottom-0 h-[2px] bg-color-qatar transition-all group-hover:h-full group-active:bg-color-qatar"
-            ></span>
-            <span
-              class="relative text-sm font-medium text-color-qatar transition-colors group-hover:text-white"
-            >
-              VER TODAS PARTIDAS
-            </span>
-          </a>
-
-              <!--BOTAO VER MENOS-->
-              <div class="hidden" id="buttonVerMenos" >
-                  <a
-                  class="group relative inline-block overflow-hidden border border-color-qatar px-8 py-3 focus:outline-none focus:ring cursor-pointer"
-                              >
-                    <span
-                      class="absolute inset-x-0 top-0 h-[2px] bg-color-qatar transition-all group-hover:h-full group-active:bg-color-qatar"
-                    ></span>
-                    <span
-                      class="relative text-sm font-medium text-color-qatar transition-colors group-hover:text-white"
-                    >
-                      VER MENOS
-                    </span>
-                  </a>
-              </div>
-        </div>
-
-
-        
-
-      </section>
-    </div>
-</div>
-
-<br><br><br>
-
-<footer class="footer p-16 bg-color-footer text-slate-300">
-  <div>
-    <span class="footer-title">Redes sociais</span> 
-    <a class="link link-hover">Facebook</a> 
-    <a class="link link-hover">Instagram</a> 
-    <a class="link link-hover">Twitter</a> 
-    <a class="link link-hover">Youtube</a>
-  </div> 
-  <div>
-    <span class="footer-title">Legais</span> 
-    <a class="link link-hover">Sobre</a> 
-    <a class="link link-hover">Lincença</a> 
-    <a class="link link-hover">Contato</a> 
-    <a class="link link-hover">Polítia de privacidade</a>
-  </div> 
-  <div>
-    <span class="footer-title">Fifa</span> 
-    <a class="link link-hover">Serviços</a> 
-    <a class="link link-hover">Patrocinadores</a> 
-  </div> 
-
-  <div class="m-auto ml-0">
-      <div class="relative">
-          <img src="/assets/logo-fifa-footer.svg" class="w-48 h-16">
-      </div>
   </div>
 
-</footer>
+
+      <header aria-label="Site Header" class="bg-white " id="header">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-20 lg:px-44">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex-1 md:flex md:items-center md:gap-12">
+              <a class="block text-teal-600 w-20 h-5" href="/">
+                <span class="sr-only">Home</span>
+                <img src="/assets/logo-fifa.svg" alt="">
+              </a>
+            </div>
+      
+            <div class="md:flex md:items-center">
+              <nav aria-label="Site Nav" class="hidden md:block">
+                <ul class="flex items-center gap-6 text-sm">
+      
+      
+                  <li>
+                    <a
+                      class="text-gray-800 transition link-hover"
+                      href="/src/index.html"
+                    >
+                    Iníco
+                    </a>
+                  </li>
+      
+                  <li>
+                    <a
+                      class="text-gray-800 transition link-hover"
+                      href="#title-grupos"
+                    >
+                    Grupos
+                    </a>
+                  </li>
+      
+                  <li>
+                    <a
+                      class="text-gray-800 transition link-hover"
+                      href="#partidas"
+                    >
+                    Partidas
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+      
+              <div class="flex items-center gap-4">
+      
+                <div class="block md:hidden">
+                  <button
+                    id="button-menu"
+                    class=" p-2 text-gray-800 transition"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      
+      <div id="images">
+        <div>
+            <img class="relative" src="/assets/wallpaper.png">
+            <img class="absolute left-0 top-64px z-10" src="/assets/gradient.png">
+            <img src="/assets/logo-fifa-world-cup.png" class="absolute z-20 top-30 w-80 h-96 left-[41%] right-[41%] bottom-[78%] max-sm:w-24 max-sm:h-28 max-sm:top-18 max-md:w-36 max-md:h-40 max-md:top-22 max-lg:w-40 max-lg:h-44 max-lg:top-24 max-xl:w-52 max-xl:h-56 max-xl:top-28 max-2xl:top-32 max-2xl:w-64 max-2xl:h-72 3xl:top-44">
+        </div>
+      </div>
+      
+      <br><br><br>
+      
+      <h1 class="text-2xl	font-medium	text-gray-800 text-center" id="title-grupos">GRUPOS</h1>
+      
+      <br><br>
+      
+      <div id="grupos" class="container m-auto px-40 max-sm:px-6 max-md:px-12 max-lg:px-10 max-xl:px-16">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!--Grupo A-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl">
+              <p class="text-xl text-center text-color-qatar p-5">Grupo A</p>
+              <div class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-A/Qatar.svg" alt="">
+                <p class="text-sm  ">Catar</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-A/Ecuador.svg" alt="">
+                <p class="text-sm  ">Equador</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-A/Senegal.svg" alt="">
+                <p class="text-sm  ">Senegal</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-A/Netherlands.svg" alt="">
+                <p class="text-sm  ">Holanda</p>
+              </div>
+            </div>
+            <!--Grupo B-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
+              <p class="text-center text-xl text-color-qatar p-5">Grupo B</p>
+              <div class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-B/United Kingdom.svg" alt="">
+                <p class="text-sm  ">Inglaterra</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-B/Iran.svg" alt="">
+                <p class="text-sm  ">Irã</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-B/USA.svg" alt="">
+                <p class="text-sm  ">Estados Unidos</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-B/Wales.svg" alt="">
+                <p class="text-sm  ">País de Gales</p>
+              </div>
+            </div>
+            <!--Grupo C-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
+              <p class="text-center text-xl text-color-qatar p-5">Grupo C</p>
+              <div class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-C/Argentina.svg" alt="">
+                <p class="text-sm  ">Argentina</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-C/Saudi Arabia.svg" alt="">
+                <p class="text-sm  ">Arábia Saudita</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-C/Mexico.svg" alt="">
+                <p class="text-sm  ">México</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-C/Poland.svg" alt="">
+                <p class="text-sm  ">Polônia</p>
+              </div>
+            </div>
+            <!--Grupo D-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
+              <p class="text-center text-xl text-color-qatar p-5">Grupo D</p>
+              <div class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-D/France.svg" alt="">
+                <p class="text-sm  ">França</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-D/Australia.svg" alt="">
+                <p class="text-sm  ">Austrália</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-D/Denmark.svg" alt="">
+                <p class="text-sm  ">Dinamarca</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-D/Tunisia.svg" alt="">
+                <p class="text-sm  ">Tunísia</p>
+              </div>
+            </div>
+            <!--Grupo E-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
+              <p class="text-center text-xl text-color-qatar p-5">Grupo E</p>
+              <div class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-E/Spain.svg" alt="">
+                <p class="text-sm  ">Espanha</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-E/Costa Rica.svg" alt="">
+                <p class="text-sm  ">Costa Rica</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-E/Germany.svg" alt="">
+                <p class="text-sm  ">Alemanha</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-E/Japan.svg" alt="">
+                <p class="text-sm  ">Japão</p>
+              </div>
+            </div>
+            <!--Grupo F-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
+              <p class="text-center text-xl text-color-qatar p-5">Grupo F</p>
+              <div class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-F/Belgium.svg" alt="">
+                <p class="text-sm  ">Bélgica</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-F/Canada.svg" alt="">
+                <p class="text-sm  ">Canadá</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-F/Morroco.svg" alt="">
+                <p class="text-sm  ">Marrocos</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-F/Croatia.svg" alt="">
+                <p class="text-sm  ">Croácia</p>
+              </div>
+            </div>
+             <!--Grupo G-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
+              <p class="text-center text-xl text-color-qatar p-5">Grupo G</p>
+              <div class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-G/Brazil.svg" alt="">
+                <p class="text-sm">Brasil</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-G/Serbia.svg" alt="">
+                <p class="text-sm  ">Sérvia</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-G/Sweden.svg" alt="">
+                <p class="text-sm  ">Suíça</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <img class="w-12 h-10" src="/assets/grupo-G/Cameroon.svg" alt="">
+                <p class="text-sm  ">Camarões</p>
+              </div>
+            </div>
+                <!--Grupo H-->
+            <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
+              <p class="text-center text-xl text-color-qatar p-5">Grupo H</p>
+                  <div class="flex gap-6 p-3 items-center">
+                    <img class="w-12 h-10" src="/assets/grupo-H/Portugal.svg" alt="">
+                    <p class="text-sm  ">Portugal</p>
+                  </div>
+      
+                  <div  class="flex gap-6 p-3 items-center">
+                    <img class="w-12 h-10" src="/assets/grupo-H/Ghana.svg" alt="">
+                   <p class="text-sm  ">Gana</p>
+                  </div>
+      
+                  <div  class="flex gap-6 p-3 items-center">
+                    <img class="w-12 h-10" src="/assets/grupo-H/Flag of Uruguay 1.svg" alt="">
+                    <p class="text-sm  ">Uruguai</p>
+                  </div>
+      
+                  <div  class="flex gap-6 p-3 items-center">
+                    <img class="w-12 h-10" src="/assets/grupo-H/South Korea.svg" alt="">
+                    <p class="text-sm   ">Coreia do Sul</p>
+                  </div>
+            </div>
+      
+          </div>
+          <br>
+        </div>
+        <div class="relative mt-14 flex">
+          <div class="swiper-button-next m-auto"></div>
+          <div class="swiper-button-prev m-auto"></div>
+        </div>
+      
+        <br><br><br>
+        <div class="mt-11">
+          <h1 class="text-2xl	font-medium	text-gray-800 text-center" id="partidas">PARTIDAS</h1>
+          <section class="mt-20">
+            <h1 class="text-base	font-medium	text-gray-800 " id="dia20"></h1>
+            <!--CATAR X EQUADOR-->
+            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+              <div class=" flex items-center gap-14  max-sm:gap-0 max-md:gap-0 ">
+                <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-A/Qatar.svg">
+                <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Cat</p>
+              </div>
+              <!--DATA/HORARIO-->
+                <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-sm">
+                  <p>0</p>
+                  <span>-</span>
+                  <p>2</p>
+                </div>
+                <div class=" flex items-center gap-14  max-sm:gap-0 max-md:gap-0">
+                  <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Equ</p>
+                  <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-A/Ecuador.svg">
+                </div>
+      
+            </div>
+            <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia21"></h1>
+            <!--INGLATERRA X IRA-->
+            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+              <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-B/United Kingdom.svg">
+                <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Ing</p>
+              </div>
+              <!--DATA/HORARIO-->
+                <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-sm">
+                  <p>6</p>
+                  <span>-</span>
+                  <p>2</p>
+                </div>
+                <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                  <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Ira</p>
+                  <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-B/Iran.svg">
+                </div>
+      
+            </div>
+            <!--SENEGAL X HOLANDA-->
+            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+              <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-A/Senegal.svg">
+                <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Sen</p>
+              </div>
+              <!--DATA/HORARIO-->
+                <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-sm">
+                  <p>0</p>
+                  <span>-</span>
+                  <p>2</p>
+                </div>
+                <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                  <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Hol</p>
+                  <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-A/Netherlands.svg">
+                </div>
+      
+            </div>
+            <!--ESTADOS UNIDOS X GALES-->
+            <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+              <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-B/USA.svg">
+                <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Eua</p>
+              </div>
+              <!--DATA/HORARIO-->
+                <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-sm">
+                  <p>1</p>
+                  <span>-</span>
+                  <p>1</p>
+                </div>
+                <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                  <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Gal</p>
+                  <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-B/Wales.svg">
+                </div>
+      
+            </div>
+            <div id="verMenos">
+              <div class="hidden" id="verMais1">
+                <!--///////////////
+                  DIA 22
+                /////////////-->
+      
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia22"></h1>
+                <!--ARGENTINA X ARABIA SAUDITA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-C/Argentina.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Arg</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>22/11</p>
+                      <p>07:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ara</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-C/Saudi Arabia.svg">
+                    </div>
+      
+                </div>
+                <!--DINAMARCA X TUNISIA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-D/Denmark.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Din</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>22/11</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Tun</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-D/Tunisia.svg">
+                    </div>
+      
+                </div>
+                <!--MEXICO X POLONIA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-C/Mexico.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Mex</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>22/11</p>
+                      <p>13:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Pol</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-C/Poland.svg">
+                    </div>
+                </div>
+                <!--FRANCA X AUSTRALIA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-D/France.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Fra</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>22/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Aus</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-D/Australia.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 23
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia23"></h1>
+                <!--MARROCOS X CROACIA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-F/Morroco.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Mar</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>23/11</p>
+                      <p>07:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Cro</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-F/Croatia.svg">
+                    </div>
+                </div>
+                <!--ALEMANHA X JAPAO-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-E/Germany.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Ale</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>23/11</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Jap</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-E/Japan.svg">
+                    </div>
+                </div>
+                <!--ESPANHA X COSTA RICA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-E/Spain.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Esp</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>23/11</p>
+                      <p>13:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Crc</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-E/Costa Rica.svg">
+                    </div>
+                </div>
+                <!--BELGICA X CANADA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-F/Belgium.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Bel</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>23/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Can</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-F/Canada.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 24
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia24"></h1>
+                <!--SUICA X CAMAROES-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-G/Sweden.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Sui</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>24/11</p>
+                      <p>07:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Cam</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-G/Cameroon.svg">
+                    </div>
+                </div>
+                <!--URUGUAI X COREIA DO SUL-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-H/Flag of Uruguay 1.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Uru</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>24/11</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Cor</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-H/South Korea.svg">
+                    </div>
+                </div>
+                <!--PORTUGAL X GANA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-H/Portugal.svg ">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Por</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>24/11</p>
+                      <p>13:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Gan</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-H/Ghana.svg">
+                    </div>
+                </div>
+                <!--BRASIL X SERVIA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-G/Brazil.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Bra</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>24/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ser</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-G/Serbia.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 25
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia25"></h1>
+                <!--GALES X IRA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-B/Wales.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Gal</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>25/11</p>
+                      <p>07:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ira</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-B/Iran.svg">
+                    </div>
+                </div>
+                <!--CATAR X SENEGAL-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-A/Qatar.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Cat</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>25/11</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Sen</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-A/Senegal.svg">
+                    </div>
+                </div>
+                <!--HOLANDA X EQUADOR-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-A/Netherlands.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Hol</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>25/11</p>
+                      <p>13:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Equ</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-A/Ecuador.svg">
+                    </div>
+                </div>
+                <!--INGLATERRA X ESTADOS UNIDOS-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-B/United Kingdom.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Ing</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>25/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Eua</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-B/USA.svg">
+                    </div>
+                </div>
+      
+                <!--///////////////
+                  DIA 26
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia26"></h1>
+                <!--TUNISIA X AUSTRALIA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-D/Tunisia.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Tun</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>26/11</p>
+                      <p>07:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Aus</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-D/Australia.svg">
+                    </div>
+                </div>
+                <!--POLONIA X ARABIA SAUDITA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-C/Poland.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Pol</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>26/11</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ara</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-C/Saudi Arabia.svg">
+                    </div>
+                </div>
+                <!--FRANCA X DINAMARCA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-D/France.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Fra</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>26/11</p>
+                      <p>13:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Din</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-D/Denmark.svg">
+                    </div>
+                </div>
+                <!--ARGENTINA X MEXICO-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-C/Argentina.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Arg</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>26/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Mex</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-C/Mexico.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 27
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia27"></h1>
+                <!--JAPAO X COSTA RICA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-E/Japan.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Jap</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>27/11</p>
+                      <p>07:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Crc</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-E/Costa Rica.svg">
+                    </div>
+                </div>
+                <!--BELGICA X MARROCOS-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-F/Belgium.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Bel</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>27/11</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Mar</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-F/Morroco.svg">
+                    </div>
+                </div>
+                <!--CROACIA X CANADA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-F/Croatia.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Cro</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>27/11</p>
+                      <p>13:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Can</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-F/Canada.svg">
+                    </div>
+                </div>
+                <!--ESPANHA X ALEMANHA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-E/Spain.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Esp</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>27/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ale</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-E/Germany.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 28
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia28"></h1>
+                <!--CAMAROES X SERVIA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-G/Cameroon.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Cam</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>28/11</p>
+                      <p>07:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ser</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-G/Serbia.svg">
+                    </div>
+                </div>
+                <!--COREIA DO SUL X GANA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-H/South Korea.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Cor</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>28/11</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Gan</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-H/Ghana.svg">
+                    </div>
+                </div>
+                <!--BRASIL X SUICA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-G/Brazil.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Bra</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>28/11</p>
+                      <p>13:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Sui</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-G/Sweden.svg">
+                    </div>
+                </div>
+                <!--PORTUGAL X URUGUAI-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-H/Portugal.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Por</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>28/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Uru</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-H/Flag of Uruguay 1.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 29
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia29"></h1>
+                <!--EQUADOR X SENEGAL-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-A/Ecuador.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Equ</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>29/11</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Sen</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-A/Senegal.svg">
+                    </div>
+                </div>
+                <!--HOLANDA X CATAR-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-A/Netherlands.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Hol</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>29/11</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Cat</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-A/Qatar.svg">
+                    </div>
+                </div>
+                <!--IRA X ESTADOS UNIDOS-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-B/Iran.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Ira</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>29/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Eua</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-B/USA.svg">
+                    </div>
+                </div>
+                <!--PAIS DE GALES X INGLATERRA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-B/Wales.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Gal</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>29/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ing</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-B/United Kingdom.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 30
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia30"></h1>
+                <!--TUNISIA X FRANCA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-D/Tunisia.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Tun</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>30/11</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Fra</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-D/France.svg">
+                    </div>
+                </div>
+                <!--AUSTRALIA X DINAMARCA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-D/Australia.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Aus</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>30/11</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Din</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-D/Denmark.svg">
+                    </div>
+                </div>
+                <!--POLONIA X ARGENTINA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-C/Poland.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Pol</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>30/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Arg</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-C/Argentina.svg">
+                    </div>
+                </div>
+                <!--ARABIA SAUDITA X MEXICO-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-C/Saudi Arabia.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Ara</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>30/11</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Mex</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-C/Mexico.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 01
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia01"></h1>
+                <!--CROACIA X BELGICA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-F/Croatia.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Cro</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>01/12</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Bel</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-F/Belgium.svg">
+                    </div>
+                </div>
+                <!--CANADA X MARROCOS-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-F/Canada.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Can</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>01/12</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Mar</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-F/Morroco.svg">
+                    </div>
+                </div>
+                <!--JAPAO X ESPANHA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-E/Japan.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Jap</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>01/12</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Esp</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-E/Spain.svg">
+                    </div>
+                </div>
+                <!--COSTA RICA X ALEMANHA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-E/Costa Rica.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Crc</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>01/12</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Ale</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-E/Germany.svg">
+                    </div>
+                </div>
+                <!--///////////////
+                  DIA 02
+                /////////////-->
+                <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia02"></h1>
+                <!--COREIA DO SUL X PORTUGAL-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-H/South Korea.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Cor</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>02/12</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Por</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-H/Portugal.svg">
+                    </div>
+                </div>
+                <!--GANA X URUGUAI-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-H/Ghana.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Gan</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>02/12</p>
+                      <p>12:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Uru</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-H/Flag of Uruguay 1.svg">
+                    </div>
+                </div>
+                <!--SERVIA X SUICA-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-G/Serbia.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Ser</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>02/12</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Sui</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-G/Sweden.svg">
+                    </div>
+                </div>
+                <!--CAMAROES X BRASIL-->
+                <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
+                  <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-G/Cameroon.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Cam</p>
+                  </div>
+                  <!--DATA/HORARIO-->
+                    <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
+                      <p>02/12</p>
+                      <p>16:00</p>
+                    </div>
+                    <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Bra</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-G/Brazil.svg">
+                    </div>
+                </div>
+              <!--FIM VER MENOS-->
+              </div>
+      
+            </div>
+            <br><br><br>
+            <div class="flex justify-center">
+              <!--BOTAO VER MAIS-->
+              <a
+                class="group relative inline-block overflow-hidden border border-color-qatar px-8 py-3 focus:outline-none focus:ring cursor-pointer" id="buttonVerMais1"
+              >
+                <span
+                  class="absolute inset-x-0 bottom-0 h-[2px] bg-color-qatar transition-all group-hover:h-full group-active:bg-color-qatar"
+                ></span>
+                <span
+                  class="relative text-sm font-medium text-color-qatar transition-colors group-hover:text-white"
+                >
+                  VER TODAS PARTIDAS
+                </span>
+              </a>
+                  <!--BOTAO VER MENOS-->
+                  <div class="hidden" id="buttonVerMenos" >
+                      <a
+                      class="group relative inline-block overflow-hidden border border-color-qatar px-8 py-3 focus:outline-none focus:ring cursor-pointer"
+                                  >
+                        <span
+                          class="absolute inset-x-0 top-0 h-[2px] bg-color-qatar transition-all group-hover:h-full group-active:bg-color-qatar"
+                        ></span>
+                        <span
+                          class="relative text-sm font-medium text-color-qatar transition-colors group-hover:text-white"
+                        >
+                          VER MENOS
+                        </span>
+                      </a>
+                  </div>
+            </div>
+      
+          </section>
+        </div>
+      </div>
+      
+      <br><br><br>
+      
+      <footer id="footer" class="footer p-16 bg-color-footer text-slate-300">
+      <div>
+        <span class="footer-title">Redes sociais</span>
+        <a class="link link-hover">Facebook</a>
+        <a class="link link-hover">Instagram</a>
+        <a class="link link-hover">Twitter</a>
+        <a class="link link-hover">Youtube</a>
+      </div>
+      <div>
+        <span class="footer-title">Legais</span>
+        <a class="link link-hover">Sobre</a>
+        <a class="link link-hover">Lincença</a>
+        <a class="link link-hover">Contato</a>
+        <a class="link link-hover">Polítia de privacidade</a>
+      </div>
+      <div>
+        <span class="footer-title">Fifa</span>
+        <a class="link link-hover">Serviços</a>
+        <a class="link link-hover">Patrocinadores</a>
+      </div>
+      <div class="m-auto">
+          <div class="relative">
+              <img src="/assets/logo-fifa-footer.svg" class="w-48 h-16">
+          </div>
+      </div>
+      
+      </footer>
+    
+  
 
 
 <!-- Swiper JS -->
