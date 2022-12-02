@@ -81,8 +81,17 @@
   }
 }
 
-
-
+.before, .before2{
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #33A34A;
+  padding: 4px;
+  border-radius: 50%;
+}
+.before2{
+  background-color: #DC2626;
+}
 </style>
 
 <body class="font-qatar bg-white text-gray-800">
@@ -192,44 +201,67 @@
       <br><br>
       
       <div id="grupos" class="container m-auto px-40 max-sm:px-6 max-md:px-12 max-lg:px-10 max-xl:px-16">
+        <div class="grid mb-4">
+          <div class="flex items-center">
+            <div class="before"></div>
+            <span class="pl-2 text-sm">Classificado</span>
+          </div>
+
+          <div class="flex items-center mt-2">
+            <div class="before2"></div>
+            <span class="pl-2 text-sm">Eliminado</span>
+          </div>
+        </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <!--Grupo A-->
             <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl">
               <p class="text-xl text-center text-color-qatar p-5">Grupo A</p>
               <div class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-A/Qatar.svg" alt="">
-                <p class="text-sm  ">Catar</p>
+                <div class="before"></div>
+
+                <img class="w-12 h-10" src="/assets/grupo-A/Netherlands.svg" alt="">
+                <p class="text-sm "> Holanda</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-A/Ecuador.svg" alt="">
-                <p class="text-sm  ">Equador</p>
-              </div>
-              <div  class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
+
                 <img class="w-12 h-10" src="/assets/grupo-A/Senegal.svg" alt="">
                 <p class="text-sm  ">Senegal</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-A/Netherlands.svg" alt="">
-                <p class="text-sm  ">Holanda</p>
+                <div class="before2"></div>
+
+                <img class="w-12 h-10" src="/assets/grupo-A/Ecuador.svg" alt="">
+                <p class="text-sm ">Equador </p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
+
+                <img class="w-12 h-10" src="/assets/grupo-A/Qatar.svg" alt="">
+                <p class="text-sm  ">Catar</p>
               </div>
             </div>
             <!--Grupo B-->
             <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
               <p class="text-center text-xl text-color-qatar p-5">Grupo B</p>
               <div class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
                 <img class="w-12 h-10" src="/assets/grupo-B/United Kingdom.svg" alt="">
                 <p class="text-sm  ">Inglaterra</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
+                <img class="w-12 h-10" src="/assets/grupo-B/USA.svg" alt="">
+                <p class="text-sm  ">Estados Unidos </p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
                 <img class="w-12 h-10" src="/assets/grupo-B/Iran.svg" alt="">
                 <p class="text-sm  ">Irã</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-B/USA.svg" alt="">
-                <p class="text-sm  ">Estados Unidos</p>
-              </div>
-              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
                 <img class="w-12 h-10" src="/assets/grupo-B/Wales.svg" alt="">
                 <p class="text-sm  ">País de Gales</p>
               </div>
@@ -238,80 +270,96 @@
             <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
               <p class="text-center text-xl text-color-qatar p-5">Grupo C</p>
               <div class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
                 <img class="w-12 h-10" src="/assets/grupo-C/Argentina.svg" alt="">
                 <p class="text-sm  ">Argentina</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-C/Saudi Arabia.svg" alt="">
-                <p class="text-sm  ">Arábia Saudita</p>
+                <div class="before"></div>
+                <img class="w-12 h-10" src="/assets/grupo-C/Poland.svg" alt="">
+                <p class="text-sm  ">Polônia</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
                 <img class="w-12 h-10" src="/assets/grupo-C/Mexico.svg" alt="">
                 <p class="text-sm  ">México</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-C/Poland.svg" alt="">
-                <p class="text-sm  ">Polônia</p>
+                <div class="before2"></div>
+                <img class="w-12 h-10" src="/assets/grupo-C/Saudi Arabia.svg" alt="">
+                <p class="text-sm  "> Arábia Saudita</p>
               </div>
             </div>
             <!--Grupo D-->
             <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
               <p class="text-center text-xl text-color-qatar p-5">Grupo D</p>
               <div class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
                 <img class="w-12 h-10" src="/assets/grupo-D/France.svg" alt="">
                 <p class="text-sm  ">França</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
                 <img class="w-12 h-10" src="/assets/grupo-D/Australia.svg" alt="">
                 <p class="text-sm  ">Austrália</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-D/Denmark.svg" alt="">
-                <p class="text-sm  ">Dinamarca</p>
-              </div>
-              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
                 <img class="w-12 h-10" src="/assets/grupo-D/Tunisia.svg" alt="">
                 <p class="text-sm  ">Tunísia</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
+                <img class="w-12 h-10" src="/assets/grupo-D/Denmark.svg" alt="">
+                <p class="text-sm  "> Dinamarca</p>
               </div>
             </div>
             <!--Grupo E-->
             <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
               <p class="text-center text-xl text-color-qatar p-5">Grupo E</p>
               <div class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
+                <img class="w-12 h-10" src="/assets/grupo-E/Japan.svg" alt="">
+                <p class="text-sm  ">Japão</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
                 <img class="w-12 h-10" src="/assets/grupo-E/Spain.svg" alt="">
                 <p class="text-sm  ">Espanha</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-E/Costa Rica.svg" alt="">
-                <p class="text-sm  ">Costa Rica</p>
-              </div>
-              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
                 <img class="w-12 h-10" src="/assets/grupo-E/Germany.svg" alt="">
                 <p class="text-sm  ">Alemanha</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-E/Japan.svg" alt="">
-                <p class="text-sm  ">Japão</p>
+                <div class="before2"></div>
+                <img class="w-12 h-10" src="/assets/grupo-E/Costa Rica.svg" alt="">
+                <p class="text-sm  ">Costa Rica </p>
               </div>
             </div>
             <!--Grupo F-->
             <div class="swiper-slide rounded-md bg-bg-slate-60 p-5 shadow-3xl ">
               <p class="text-center text-xl text-color-qatar p-5">Grupo F</p>
               <div class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-F/Belgium.svg" alt="">
-                <p class="text-sm  ">Bélgica</p>
-              </div>
-              <div  class="flex gap-6 p-3 items-center">
-                <img class="w-12 h-10" src="/assets/grupo-F/Canada.svg" alt="">
-                <p class="text-sm  ">Canadá</p>
-              </div>
-              <div  class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
                 <img class="w-12 h-10" src="/assets/grupo-F/Morroco.svg" alt="">
                 <p class="text-sm  ">Marrocos</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
+                <div class="before"></div>
                 <img class="w-12 h-10" src="/assets/grupo-F/Croatia.svg" alt="">
                 <p class="text-sm  ">Croácia</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
+                <img class="w-12 h-10" src="/assets/grupo-F/Belgium.svg" alt="">
+                <p class="text-sm  "> Bélgica</p>
+              </div>
+              <div  class="flex gap-6 p-3 items-center">
+                <div class="before2"></div>
+                <img class="w-12 h-10" src="/assets/grupo-F/Canada.svg" alt="">
+                <p class="text-sm  "> Canadá</p>
               </div>
             </div>
              <!--Grupo G-->
@@ -323,15 +371,15 @@
               </div>
               <div  class="flex gap-6 p-3 items-center">
                 <img class="w-12 h-10" src="/assets/grupo-G/Serbia.svg" alt="">
-                <p class="text-sm  ">Sérvia</p>
+                <p class="text-sm ">Sérvia</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
                 <img class="w-12 h-10" src="/assets/grupo-G/Sweden.svg" alt="">
-                <p class="text-sm  ">Suíça</p>
+                <p class="text-sm ">Suíça</p>
               </div>
               <div  class="flex gap-6 p-3 items-center">
                 <img class="w-12 h-10" src="/assets/grupo-G/Cameroon.svg" alt="">
-                <p class="text-sm  ">Camarões</p>
+                <p class="text-sm ">Camarões</p>
               </div>
             </div>
                 <!--Grupo H-->
@@ -339,12 +387,12 @@
               <p class="text-center text-xl text-color-qatar p-5">Grupo H</p>
                   <div class="flex gap-6 p-3 items-center">
                     <img class="w-12 h-10" src="/assets/grupo-H/Portugal.svg" alt="">
-                    <p class="text-sm  ">Portugal</p>
+                    <p class="text-sm ">Portugal</p>
                   </div>
       
                   <div  class="flex gap-6 p-3 items-center">
                     <img class="w-12 h-10" src="/assets/grupo-H/Ghana.svg" alt="">
-                   <p class="text-sm  ">Gana</p>
+                   <p class="text-sm ">Gana</p>
                   </div>
       
                   <div  class="flex gap-6 p-3 items-center">
@@ -1260,11 +1308,11 @@
                     </div>
                 </div>
 
-                <!--OITAVAS | X -->
+                <!--OITAVAS ARGENTINA | AUSTRALIA X -->
                 <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
                   <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/Team.svg">
-                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Time</p>
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-C/Argentina.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Arg</p>
                   </div>
                   <!--DATA/HORARIO-->
                     <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
@@ -1272,8 +1320,8 @@
                       <p>16:00</p>
                     </div>
                     <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Time</p>
-                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/Team.svg">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Aus</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-D/Australia.svg">
                     </div>
                 </div>
 
@@ -1284,11 +1332,11 @@
                 <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia04"></h1>
 
 
-                <!--OITAVAS | X -->
+                <!--OITAVAS FRANCA | POLONIA X -->
                 <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
                   <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/Team.svg">
-                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Time</p>
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-D/France.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Fra</p>
                   </div>
                   <!--DATA/HORARIO-->
                     <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
@@ -1296,12 +1344,12 @@
                       <p>12:00</p>
                     </div>
                     <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Time</p>
-                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/Team.svg">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Pol</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-C/Poland.svg">
                     </div>
                 </div>
                 
-                <!--OITAVAS | X -->
+                <!--OITAVAS INGLATERRA | SENEGAL X -->
                 <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
                   <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
                     <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-B/United Kingdom.svg">
@@ -1326,11 +1374,11 @@
                 <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia05"></h1>
 
 
-                <!--OITAVAS | X -->
+                <!--OITAVAS JAPAO | CROACIA X -->
                 <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
                   <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/Team.svg">
-                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Time</p>
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-E/Japan.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Jap</p>
                   </div>
                   <!--DATA/HORARIO-->
                     <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
@@ -1338,12 +1386,12 @@
                       <p>12:00</p>
                     </div>
                     <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Time</p>
-                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/Team.svg">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Cro</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-F/Croatia.svg">
                     </div>
                 </div>
 
-                <!--OITAVAS | X -->
+                <!--OITAVAS  | X -->
                 <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
                   <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
                     <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/Team.svg">
@@ -1366,11 +1414,11 @@
 
                 <h1 class="text-base	font-medium	text-gray-800 mt-20" id="dia06"></h1>
 
-                <!--OITAVAS | X -->
+                <!--OITAVAS MARROCOS | ESPANHA X -->
                 <div class="container flex items-center bg-bg-slate-60 mt-4 p-3 rounded-md shadow-3xl">
                   <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/Team.svg">
-                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Time</p>
+                    <img class="pr-11 h-12 max-sm:h-8 max-sm:pr-5 max-md:pr-8 max-md:h-9 max-lg:pr-4" src="/assets/grupo-F/Morroco.svg">
+                    <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg ">Mar</p>
                   </div>
                   <!--DATA/HORARIO-->
                     <div class="flex gap-7 items-center m-auto text-color-qatar text-base max-sm:gap-3  max-sm:text-xs max-md:text-sm">
@@ -1378,8 +1426,8 @@
                       <p>12:00</p>
                     </div>
                     <div class=" flex items-center gap-14 max-sm:gap-0 max-md:gap-0 ">
-                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Time</p>
-                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/Team.svg">
+                      <p class="text-xl	text-zinc-700 max-sm:text-base max-md:text-lg">Esp</p>
+                      <img class="pl-11 h-12 max-sm:h-8 max-sm:pl-5 max-md:pl-8 max-md:h-9 max-lg:pl-4" src="/assets/grupo-E/Spain.svg">
                     </div>
                 </div>
 
